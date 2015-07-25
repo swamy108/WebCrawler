@@ -1,0 +1,24 @@
+<!DOCTYPE >
+<html> 
+<head>
+<title> WEB CRawler </title> </head>
+<body>
+<h2>Django Web Crawler</h2>
+<form method="post" action="/crawl/">
+{% csrf_token %}
+<table>
+	<tr>
+		<td>URL :</td>
+		<td><input type="url" name="url"/></td>
+	</tr> 
+	<tr>
+		<td>Crawling Depth : </td>
+		<td><input type="number" min=1 max=10 name="depth"/></td>
+	</tr> 
+	<tr>
+		<td><input type="submit" value="Submit"></td>
+	</tr>
+</table>
+</form>
+</body>
+</html>
