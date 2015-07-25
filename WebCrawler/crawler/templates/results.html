@@ -1,0 +1,29 @@
+<!DOCTYPE >
+<html> 
+<head>
+<title> WEB CRawler </title> </head>
+<body>
+<h2>Django Web Crawler</h2>
+
+<table>
+	<tr>
+		<td>URL : {{ url }}</td>
+		<td></td>
+	</tr> 
+	<tr>
+		<td>Crawling Depth : {{ depth }}</td>
+		<td></td>
+	</tr> 
+	
+	<div>
+		Images found after crawling
+		<div>
+			{% for img in images %}
+				<img src="{{ img }}"/>
+			{% endfor %}
+		</div>
+	</div>
+
+</table>
+</body>
+</html>
